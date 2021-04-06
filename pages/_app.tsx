@@ -3,10 +3,10 @@ import { GlobalStyles } from "twin.macro";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div>
+    <>
       <GlobalStyles />
       <Component {...pageProps} />
-    </div>
+    </>
   );
 }
 
