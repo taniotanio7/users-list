@@ -3,7 +3,7 @@ import tw, { css } from "twin.macro";
 import { User } from "../types/user";
 
 interface IResultsProps {
-  users: User[];
+  users?: User[];
 }
 
 const markerStyles = css`
@@ -13,17 +13,12 @@ const markerStyles = css`
 `;
 
 export default function Results({ users }: IResultsProps) {
-  if (!users || users?.length === 0) {
+  if (!Array.isArray(users) || users?.length === 0) {
     return <p>No users found</p>;
   }
 
   return (
-    <ol
-      css={[
-        tw`list-inside list-decimal text-gray-800 dark:text-gray-200`,
-        markerStyles,
-      ]}
-    >
+    <ol css={[tw`list-inside list-decimal`, markerStyles]}>
       {users.map(user => (
         <li key={user.id}>
           <span>{user.name}</span>
