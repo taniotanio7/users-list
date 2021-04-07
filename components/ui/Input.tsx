@@ -19,6 +19,7 @@ const LabelText = ({ children, hidden = false }: LabelTextProps) => {
 export interface IInputProps extends React.HTMLProps<HTMLInputElement> {
   name: string;
   hideLabel?: boolean;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const inputStyles = ({ withLabel = false }) => [
