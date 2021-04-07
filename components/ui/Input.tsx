@@ -1,4 +1,4 @@
-import tw, { styled, css } from "twin.macro";
+import tw from "twin.macro";
 import VisuallyHidden from "@reach/visually-hidden";
 
 interface LabelTextProps {

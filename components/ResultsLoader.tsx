@@ -1,5 +1,4 @@
 import React from "react";
-import tw from "twin.macro";
 import ContentLoader from "react-content-loader";
 
 import colors from "tailwindcss/colors";
