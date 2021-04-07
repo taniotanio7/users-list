@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           }
 
           body {
-            ${tw`bg-warmGray-50 dark:bg-warmGray-900`}
+            ${tw`bg-gray-50 dark:bg-gray-900`}
           }
         `}
       />
