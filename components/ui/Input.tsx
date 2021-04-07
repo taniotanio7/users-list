@@ -23,7 +23,7 @@ export interface IInputProps extends React.HTMLProps<HTMLInputElement> {
 }
 
 const inputStyles = ({ withLabel = false }) => [
-  tw`block w-full rounded-md bg-gray-100 dark:bg-gray-900 border-gray-300 dark:border-gray-700 shadow-sm`,
+  tw`block w-full rounded-md bg-gray-100 border-gray-300 text-gray-800 dark:(bg-gray-900 border-gray-700 text-gray-200) shadow-sm`,
   tw`focus:(border-yellow-500 ring-2 ring-yellow-400 ring-opacity-50)`,
   withLabel && tw`mt-2`,
 ];
