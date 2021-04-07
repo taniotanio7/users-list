@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "twin.macro";
 import ErrorBox from "../components/ErrorBox";
 import Results from "../components/Results";
+import ResultsLoader from "../components/ResultsLoader";
 import Input from "../components/ui/Input";
 import { useFilteredUsers } from "../hooks/data/useFilteredUsers";
 import { useUsers } from "../hooks/data/useUsers";
@@ -32,7 +33,7 @@ export default function Home() {
 
           <div tw="max-w-2xl mx-auto mt-4 md:mt-6 lg:mt-8">
             <div tw="bg-emerald-50 text-gray-800 dark:(text-gray-200 bg-yellow-900) p-3 md:px-5 rounded-xl shadow-lg md:shadow-xl">
-              {loading && <p>Loading...</p>}
+              {loading && <ResultsLoader />}
               {error && <ErrorBox error={error} />}
               {!loading && !error && users && <Results users={filteredUsers} />}
             </div>
