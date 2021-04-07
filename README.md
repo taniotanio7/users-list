@@ -5,7 +5,7 @@ Example Users list app that fetches data from [JSON Placeholder API](https://jso
 ## Live Demo
 
 App is automatically deployed to Vercel on every push to main.
-[See it live](https://users-list-kuc8gvr2e-taniotanio7.vercel.app/)
+[See it live](https://users-list-taniotanio7.vercel.app/)
 
 ## Tech stack
 
