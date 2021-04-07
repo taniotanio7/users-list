@@ -18,3 +18,9 @@ Website uses following tech stack:
 Additional packages:
 - [react-content-loader](https://github.com/danilowoz/react-content-loader) - for building loading skeleton
 - [use-http](https://use-http.com/#/) - for useFetch hook
+
+## Lighthouse Score
+
+Thanks to Next.js brilliant defaults, the app scores 100 points in Lighthouse test
+
+![Lighthouse Score](/docs/lighthouse_score.png)
