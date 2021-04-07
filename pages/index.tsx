@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "twin.macro";
+import Head from "next/head";
+
 import ErrorBox from "../components/ErrorBox";
 import Results from "../components/Results";
 import ResultsLoader from "../components/ResultsLoader";
 import Input from "../components/ui/Input";
+
 import { useFilteredUsers } from "../hooks/data/useFilteredUsers";
 import { useUsers } from "../hooks/data/useUsers";
 
@@ -14,6 +17,10 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Users list</title>
+        <meta property="og:title" content="Users list app" key="title" />
+      </Head>
       <header tw="pt-2 pb-4 md:(pt-4 pb-6) lg:pb-10 xl:pb-12">
         <h1 tw="text-center text-4xl md:text-6xl lg:text-8xl font-bold lg:font-semibold text-gray-900 dark:text-gray-100">
           Users list
